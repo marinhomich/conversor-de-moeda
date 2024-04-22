@@ -1,15 +1,20 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+        Scanner leitura = new Scanner(System.in);
+        ConversorMoeda conversorMoeda = new ConversorMoeda();
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
-        }
+
+        System.out.println("Seja bem-vindo(a) ao Conversor de Moeda :)");
+        System.out.println("Escolha uma opção válida:");
+        System.out.println();
+        System.out.println("1) Dólar =>> Peso Argentino");
+        System.out.println("2) Peso Argentino =>> Dolar");
+        System.out.println("3) Dólar =>> Real Brasileiro");
+        System.out.println("4) Real Brasileiro =>> Dólar");
+        System.out.println("5) Dólar =>> Peso Colombiano");
+        System.out.println("6) Peso Colombiano =>> Dólar");
+        System.out.println("7) Sair");
     }
 }
